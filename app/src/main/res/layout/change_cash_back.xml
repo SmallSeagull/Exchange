@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llt_Change_cash_back_title"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:background="@color/global_background"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_Change_cash_back_left"
+                android:layout_width="@dimen/wallet_title_width"
+                android:layout_height="@dimen/wallet_title_height"
+                android:layout_marginBottom="@dimen/wallet_title_marginBottom"
+                android:layout_marginLeft="@dimen/wallet_title_marginLeft"
+                android:layout_marginTop="@dimen/wallet_title_marginTop"
+                android:src="@mipmap/ic_home_return" />
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/change_cash_back"
+                android:textColor="@color/global_white"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--全部常见问题内容栏-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/global_deep_background"
+        >
+        <TextView
+            android:layout_width="325dp"
+            android:layout_height="215dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:text="1. 商家发布广告时，可以对交易方设置限制，例如要求
+    交易方至少完成过一次交易，必须手机验证或者实名
+     验证。如果不符合商家的要求，便无法下单。
+2. 对于未实名用户，每天限制可下单3次，每次金额不
+    超过500元；
+3. 为了营造公平诚信的交易氛围，若用户取消订单超过
+    3次，将被限制当日的交易功能。
+4. 若账号存在严重违规行为，将被平台限制交易。"
+            android:textColor="@color/global_shallow_gray"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

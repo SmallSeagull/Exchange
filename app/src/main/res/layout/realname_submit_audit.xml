@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_deep_background"
+    android:orientation="vertical">
+
+
+    <!--实名认证标题栏-->
+    <LinearLayout
+        android:id="@+id/llt_Realname_submit_Title"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_Realname_submit_left"
+                android:layout_width="@dimen/wallet_title_width"
+                android:layout_height="@dimen/wallet_title_height"
+                android:layout_marginBottom="@dimen/wallet_title_marginBottom"
+                android:layout_marginLeft="@dimen/wallet_title_marginLeft"
+                android:layout_marginTop="@dimen/wallet_title_marginTop"
+                android:src="@mipmap/ic_home_return" />
+
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="146dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:text="@string/realname_identification_Title"
+                android:textColor="@color/global_white"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--实名认证个人信息内容-->
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--姓名-->
+        <TextView
+            android:id="@+id/tv_Real_name"
+            android:layout_width="55dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="18dp"
+            android:text="姓名："
+            android:textSize="14dp"
+            android:textColor="@color/global_shallow_gray"
+            />
+        <View
+            android:id="@+id/view_Real_name"
+            android:layout_width="298dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/tv_Real_name"
+            android:background="@color/global_shallow_gray"
+            />
+
+        <!--证件号-->
+        <TextView
+            android:id="@+id/tv_Real_name_certificate"
+            android:layout_width="55dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/view_Real_name"
+            android:text="姓名："
+            android:textSize="14dp"
+            android:textColor="@color/global_shallow_gray"
+            />
+        <View
+            android:id="@+id/view_Real_name_certificate"
+            android:layout_width="298dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/tv_Real_name_certificate"
+            android:background="@color/global_shallow_gray"
+            />
+
+        <!--身份证验证前提示-->
+        <TextView
+            android:id="@+id/tv_Real_name_prompt"
+            android:layout_width="298dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/view_Real_name_certificate"
+            android:text="@string/Real_name_prompt"
+            android:textSize="12dp"
+            android:textColor="@color/global_shallow_gray"
+            />
+        
+        <!--上传身份证正面照-->
+        <ImageView
+            android:id="@+id/img_IdCard_positive"
+            android:layout_width="120dp"
+            android:layout_height="79dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv_Real_name_prompt"
+            android:src="@mipmap/ic_real_card"
+            />
+        <TextView
+            android:id="@+id/tv_Id_card_positive"
+            android:layout_width="114dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="42dp"
+            android:layout_below="@+id/img_IdCard_positive"
+            android:text="@string/IdCard_Positive"
+            android:textColor="@color/global_shallow_gray"
+            android:textSize="12dp"
+            />
+        
+        <!--上传身份证反面照-->
+        <ImageView
+            android:id="@+id/img_IdCard_contrary"
+            android:layout_width="121dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv_Real_name_prompt"
+            android:src="@mipmap/ic_real_badge"
+            />
+        <TextView
+            android:id="@+id/tv_IdCard_contrary"
+            android:layout_width="114dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_IdCard_contrary"
+            android:text="@string/IdCard_contrary"
+            android:textSize="12dp"
+            android:textColor="@color/global_shallow_gray"
+            />
+        
+        <!--手持身份证拍照验证-->
+        <ImageView
+            android:id="@+id/img_IdCard_handheld"
+            android:layout_width="167dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/tv_IdCard_contrary"
+            android:src="@mipmap/ic_real_handheld"
+            />
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="14dp" 
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/img_IdCard_handheld"
+            android:text="@string/IdCard_hand_photograph"
+            android:textSize="12dp"
+            android:textColor="@color/global_shallow_gray"
+            />
+        
+        <!--底部提交审核按钮-->
+        <Button
+            android:layout_width="345dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/IdCard_prompt_audit"
+            android:textColor="@color/global_blue"
+            android:textSize="17dp"
+            android:background="@drawable/realname_submit_border"
+            />
+        
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

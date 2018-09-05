@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="288dp"
+    android:layout_height="192dp"
+    android:orientation="vertical"
+    >
+    
+    <TextView
+        android:layout_width="61dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/change_Nickname"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="31dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/change_nickname_dialog"
+        >
+        <!--取消掉EditText的底边下划线和背景颜色-->
+        <EditText
+            android:id="@+id/tv_change_nickname"
+            style="?android:attr/textViewStyle"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:layout_height="38dp"
+            android:hint="修改昵称"
+            />
+
+    </LinearLayout>
+
+    <!--取消和确认按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="36dp"
+        >
+        
+        <Button
+            android:id="@+id/btn_Negative"
+            android:layout_width="144dp"
+            android:layout_height="41dp"
+            android:text="取消"
+            />
+        <Button
+            android:id="@+id/btn_Positive"
+            android:layout_width="144dp"
+            android:layout_height="41dp"
+            android:text="确认"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

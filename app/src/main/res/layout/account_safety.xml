@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_deep_background"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/llt_account_safety_title"
+            android:layout_width="360dp"
+            android:layout_height="61dp"
+            android:background="@color/trading_backgrou"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_account_safety_left"
+                    android:layout_width="@dimen/wallet_title_width"
+                    android:layout_height="@dimen/wallet_title_height"
+                    android:layout_marginBottom="@dimen/wallet_title_marginBottom"
+                    android:layout_marginLeft="@dimen/wallet_title_marginLeft"
+                    android:layout_marginTop="@dimen/wallet_title_marginTop"
+                    android:src="@mipmap/ic_home_return" />
+
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="146dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/account_safety"
+                    android:textColor="@color/trading_title_in"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--账户安全底部布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/llt_account_safety_title"
+            >
+
+            <!--实名认证-->
+            <LinearLayout
+                android:id="@+id/llt_account_realname"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/me_border"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="24dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="13dp"
+                                android:text="@string/account_realname_identification"
+                                android:textColor="@color/global_white"
+                                android:gravity="center_vertical"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:id="@+id/tv_account_realname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="21dp"
+                                android:text="xxxx"
+                                android:textSize="12dp"
+                                android:gravity="center_vertical"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="39dp"
+                                android:textColor="@color/global_white"
+                                />
+
+                            <ImageView
+                                android:id="@+id/img_account_realname_right"
+                                android:layout_width="6dp"
+                                android:layout_height="12dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="19dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@mipmap/ic_me_aorrwl" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--重置密码登录密码 ，重置交易密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/me_border"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp">
+
+                    <!--重置登录密码-->
+                    <LinearLayout
+                        android:id="@+id/llt_account_reset_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="24dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="13dp"
+                                android:text="@string/account_reset_login_password"
+                                android:textColor="@color/global_white"
+
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/img_account_login_right"
+                                android:layout_width="6dp"
+                                android:layout_height="12dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="19dp"
+                                android:layout_marginTop="19dp"
+                                android:src="@mipmap/ic_me_aorrwl" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <!--重置交易密码-->
+                    <LinearLayout
+                        android:id="@+id/llt_account_reset_transaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/llt_account_reset_login"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="24dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="13dp"
+                                android:text="@string/account_reset_transaction_password"
+                                android:textColor="@color/global_white"
+
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/img_account_transaction_right"
+                                android:layout_width="6dp"
+                                android:layout_height="12dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="19dp"
+                                android:layout_marginTop="19dp"
+                                android:src="@mipmap/ic_me_aorrwl" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

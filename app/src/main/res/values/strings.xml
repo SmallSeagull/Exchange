@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Exchange</string>
+    
+    <!--首页数据显示-->
+    <string name="voice_text">交易所正式开启,啦啦啦啦啦啦啦啦</string>
+    <string name="framelayout_home">首页</string>
+    <string name="framelayout_deal">交易</string>
+    <string name="framelayout_bonus">分红</string>
+    <string name="framelayout_wallet">钱包</string>
+    <string name="framelayout_me">我的</string>
+    
+    <!--me_page页面显示数据-->
+    <string name="me_page_name">昵称</string>
+    <string name="me_page__personal">个人资料</string>
+    <string name="me_page_account">账户安全</string>
+    <string name="me_page_collection">收款设置</string>
+    <string name="me_page_recommend">推荐返佣</string>
+    <string name="me_page_common">常见问题</string>
+    <string name="me_page_about">关于</string>
+    
+    
+    <!--设置页面显示数据-->
+    <string name="me_set_contact_us">联系我们</string>
+    <string name="me_set_data_cache">数据缓存</string>
+    <string name="me_set_version">版本</string>
+    <string name="me_set_btn_exit">退出登录</string>
+    
+    <!--个人资料-->
+    <string name="Personal_title_text">个人资料</string>
+    <string name="Personal_name">昵称</string>
+    <string name="Personal_User">用户ID</string>
+    <string name="Personal_Email">邮箱</string>
+    <string name="Personal_Phone">手机</string>
+
+    <!--邮箱界面数据-->
+    
+    
+    <!--关于我们界面数据-->
+    <string name="about_me_Title">关于我们</string>
+    <string name="about_me_Contact_customer_service">联系客服</string>
+    <string name="about_me_Product_introduction">产品介绍</string>
+    <string name="about_me_Chinese_official_community">中文官方社群</string>
+    <string name="about_me_Version_new">版本跟新</string>
+
+    
+    <!--账户安全页面-->
+    <string name="account_safety">账户安全</string>
+    <string name="account_realname_identification">实名认证</string>
+    <string name="account_reset_login_password">重置登录密码</string>
+    <string name="account_reset_transaction_password">重置交易密码</string>
+    
+    <!--实名认证-->
+    <string name="realname_identification_Title">实名认证</string>
+    <string name="realname_identification_tv">实名认证</string>
+    <string name="Real_name_prompt">为了您的资金安全，需验证您的身份证才可以进行其他操作，认证信息一经验证不能修改，请务必如实填写。</string>
+    <string name="IdCard_Positive">点击上传身份证正面照</string>
+    <string name="IdCard_contrary">点击上传身份证背面照</string>
+    <string name="IdCard_hand_photograph">请手持身份证完成拍照验证</string>
+    <string name="IdCard_prompt_audit">提交审核</string>
+    
+    <!--修改昵称-->
+    <string name="change_Nickname">修改昵称</string>
+    <!--常见问题-->
+    <string name="Common_problems">常见问题</string>
+    <string name="Cash_back">零钱返现支持银行和到账时间说明</string>
+    <!--零钱返现及支持到账-->
+    <string name="change_cash_back">零钱返现支持及到账...</string>
+
+    <!--添加支付宝页面-->
+    <string name="add_alipay_title">添加支付宝</string>
+    <!--添加银行卡-->
+    <string name="add_bank_crad">添加银行卡</string>
+
+
+
+    <!--推荐返佣-->
+    <string name="recommend_title_text">推荐返佣</string>
+    <string name="recommend_title_share">分享</string>
+    <string name="recommend_friends">推荐好友领福利</string>
+    <string name="my_recommend_code">我的推荐码</string>
+    <string name="long_press_save">长按保存二维码</string>
+    <string name="my_recommend_link">我的推荐链接</string>
+
+    
+    <!--title栏的数据-->
+    <string name="me_set_title">设置</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/llt_Email_title"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:background="@color/trading_backgrou"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_Email_left"
+                android:layout_width="@dimen/wallet_title_width"
+                android:layout_height="@dimen/wallet_title_height"
+                android:layout_marginBottom="@dimen/wallet_title_marginBottom"
+                android:layout_marginLeft="@dimen/wallet_title_marginLeft"
+                android:layout_marginTop="@dimen/wallet_title_marginTop"
+                android:src="@mipmap/ic_home_return" />
+
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="146dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:text="邮箱"
+                android:textColor="@color/global_white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--邮箱中间界面布局-->
+
+
+</LinearLayout>

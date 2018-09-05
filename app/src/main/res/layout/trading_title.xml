@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="61dp"
+    android:orientation="horizontal"
+    android:background="@color/trading_backgrou"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_trading_k"
+            android:layout_width="@dimen/trading_title_width"
+            android:layout_height="@dimen/trading_title_height"
+            android:layout_marginBottom="@dimen/trading_title_k_marginBottom"
+            android:layout_marginLeft="@dimen/trading_title_k_marginLeft"
+            android:layout_marginTop="@dimen/trading_title_k_marginTop"
+            android:src="@mipmap/ic_trading_k" />
+
+        <View
+            android:id="@+id/trading_view_in"
+            android:layout_width="62dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/trading_title_shape_left"
+            android:orientation="horizontal" />
+
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="134dp"
+            android:layout_marginTop="32dp"
+            android:text="买入"
+            android:textColor="@color/trading_title_in"
+            android:textSize="11.5dp" />
+
+        <View
+            android:id="@+id/trading_view_out"
+            android:layout_width="62dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal"
+            android:background="@drawable/trading_title_shape_right"
+            />
+
+        <TextView
+            android:layout_width="29dp"
+            android:layout_height="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="197dp"
+            android:layout_marginTop="31dp"
+            android:text="卖出"
+            android:textColor="@color/trading_title_out"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/img_trading_collection"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="303dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:src="@mipmap/sc"
+            />
+
+        <ImageView
+            android:id="@+id/img_trading_record"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="334dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="14dp"
+            android:src="@mipmap/ic_trading_time"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

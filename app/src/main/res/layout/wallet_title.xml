@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llt_wallet_title"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:background="@color/trading_backgrou"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_wallet_left"
+                android:layout_width="@dimen/wallet_title_width"
+                android:layout_height="@dimen/wallet_title_height"
+                android:layout_marginBottom="@dimen/wallet_title_marginBottom"
+                android:layout_marginLeft="@dimen/wallet_title_marginLeft"
+                android:layout_marginTop="@dimen/wallet_title_marginTop"
+                android:src="@mipmap/ic_home_return" />
+
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="164dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/framelayout_wallet"
+                android:textColor="@color/trading_title_in"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/img_wallet_eyes"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/ic_wallet_open" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_wallet_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llt_wallet_title"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="推荐" />
+    </LinearLayout>
+
+</RelativeLayout>

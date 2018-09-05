@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_deep_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:id="@+id/llt_personal_title"
+            android:layout_width="360dp"
+            android:layout_height="61dp"
+            android:background="@color/trading_backgrou"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_personal_left"
+                    android:layout_width="@dimen/wallet_title_width"
+                    android:layout_height="@dimen/wallet_title_height"
+                    android:layout_marginBottom="@dimen/wallet_title_marginBottom"
+                    android:layout_marginLeft="@dimen/wallet_title_marginLeft"
+                    android:layout_marginTop="@dimen/wallet_title_marginTop"
+                    android:src="@mipmap/ic_home_return" />
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="146dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/Personal_title_text"
+                    android:textColor="@color/trading_title_in"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--个人资料页面数据-->
+        <LinearLayout
+            android:layout_width="345dp"
+            android:layout_height="193dp"
+            android:layout_below="@+id/llt_personal_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/me_border"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="193dp">
+
+                <!--昵称栏-->
+                <LinearLayout
+                    android:id="@+id/llt_personal_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+
+                        <TextView
+                            android:layout_width="55dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginTop="13dp"
+                            android:text="@string/Personal_name"
+                            android:textColor="@color/global_white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="227dp"
+                            android:layout_marginTop="13dp"
+                            android:text="显示昵称"
+                            android:textColor="@color/global_white"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:id="@+id/img_personal_name_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <!--用户ID栏-->
+                <LinearLayout
+                    android:id="@+id/llt_personal_UserId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/llt_personal_name"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="66dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginTop="13dp"
+                            android:text="@string/Personal_User"
+                            android:textColor="@color/global_white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="227dp"
+                            android:layout_marginTop="13dp"
+                            android:text="显示ID"
+                            android:textColor="@color/global_white"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:id="@+id/img_personal_UserId_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <!--邮箱栏-->
+                <LinearLayout
+                    android:id="@+id/llt_personal_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/llt_personal_UserId"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="55dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginTop="13dp"
+                            android:paddingLeft="1dp"
+                            android:text="@string/Personal_Email"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="227dp"
+                            android:layout_marginRight="39dp"
+                            android:layout_marginTop="13dp"
+                            android:text="xxxx@xxxxx"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:id="@+id/img_personal_Email_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <!--手机栏-->
+                <LinearLayout
+                    android:id="@+id/llt_personal_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/llt_personal_Email"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="55dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginTop="13dp"
+                            android:text="@string/Personal_Phone"
+                            android:textColor="@color/global_white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="79dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="227dp"
+                            android:layout_marginTop="13dp"
+                            android:text="13047979729"
+                            android:textColor="@color/global_white"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:id="@+id/img_personal_Phone_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--底部显示登录时间，和IP地址-->
+
+        <TextView
+            android:id="@+id/tv_personal_Login_time"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="550dp"
+            android:text="上次登录的时间是：2018-08-21 09:30"
+            android:textColor="@color/global_white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_personal_Login_IP"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="569dp"
+            android:text="上次登录的IP：3265.332.322.21"
+            android:textColor="@color/global_white"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

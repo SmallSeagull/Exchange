@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_deep_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/set_title"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--联系我们，数据缓存，版本 栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/me_border"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="163dp">
+
+                <!--联系我们栏-->
+                <LinearLayout
+                    android:id="@+id/llt_me_personal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:id="@+id/tv_set_contact"
+                            android:layout_width="150dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/me_set_contact_us"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="19dp"
+                            android:text="1434358427@qq.com"
+                            android:textColor="@color/global_white" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <!--数据缓存栏-->
+                <LinearLayout
+                    android:id="@+id/llt_me_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/llt_me_personal"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:id="@+id/tv_set_data_cache"
+                            android:layout_width="150dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/img_me_account"
+                            android:text="@string/me_set_data_cache"
+                            android:textColor="@color/global_white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="19dp"
+                            android:text="0.0M"
+                            android:textColor="@color/global_white" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <!--版本栏-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/llt_me_account"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_set_version"
+                            android:layout_width="150dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/me_set_version"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="19dp"
+                            android:text="1.0"
+                            android:textColor="@color/global_white" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/set_btn_exit"
+            android:layout_width="345dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/me_border"
+            android:text="@string/me_set_btn_exit"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

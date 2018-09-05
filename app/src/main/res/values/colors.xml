@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--全局颜色-->
+    <color name="global_white">#ffffffff</color>
+    <!--全局蓝色-->
+    <color name="global_blue">#ff0296ff</color>
+    <!--全局浅蓝色-->
+    <color name="global_shallow_blue">#ff32395e</color>
+    <!--全局浅灰色-->
+    <color name="global_shallow_gray">#ff6e7797</color>
+    <!--全局矩形框背景色-->
+    <color name="global_slate_blue">#ff32395e</color>
+    <color name="global_background">#ff1C2340</color>
+    <!--全局背景淡灰色-->
+    <color name="global_light_gray">#ffececec</color>
+
+    <!--推荐二维码背景灰色-->
+    <color name="global_gray">#ffdcdcdc</color>
+
+    <color name="global_deep_background">#151935</color>
+
+                 <!--首页颜色-->
+    <!--通知框-->
+    <color name="home_backgrou">#ff1C2340</color>
+    <color name="voice_text_color">#ff0296ff</color>
+    <color name="navigation_text">#ffbfbfbf</color>
+
+    <!--交易页面颜色-->
+
+    <color name="trading_backgrou">#ff1C2340</color>
+    <color name="trading_title_in">#ffffffff</color>
+    <color name="trading_title_out">#ffffffff</color>
+    <color name="trading_gray">#ff6e7797</color>
+    <color name="trading_blue">#ff0296ff</color>
+    <!--交易面标题的颜色-->
+    <color name="trading_title_backgroud_normal">#151935</color>
+    <color name="trading_title_backgroud_selector">#ffbfbfbf</color>
+    <color name="trading_title_border">#ffffffff</color>
+    <color name="trading_white">#ffffffff</color>
+
+
+</resources>
+
+            
+
+

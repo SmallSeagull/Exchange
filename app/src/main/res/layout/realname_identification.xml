@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/global_deep_background"
+    >
+
+    <LinearLayout
+        android:id="@+id/llt_Realname_Title"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:background="@color/trading_backgrou"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_Realname_left"
+                android:layout_width="@dimen/wallet_title_width"
+                android:layout_height="@dimen/wallet_title_height"
+                android:layout_marginBottom="@dimen/wallet_title_marginBottom"
+                android:layout_marginLeft="@dimen/wallet_title_marginLeft"
+                android:layout_marginTop="@dimen/wallet_title_marginTop"
+                android:src="@mipmap/ic_home_return" />
+
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="146dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:text="@string/realname_identification_Title"
+                android:textColor="@color/global_white"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--实名认证栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/me_border"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_Real_name_head"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="24px"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="16dp"
+                android:src="@mipmap/ic_real_name" />
+
+            <TextView
+                android:id="@+id/tv_Real_name"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/img_Real_name_head"
+                android:text="@string/realname_identification_tv"
+                android:textColor="@color/global_blue"
+
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_Realname_name"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/img_Real_name_head"
+                android:text="曾水莲"
+                android:textColor="@color/global_white"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_Realname_Id_card"
+                android:layout_width="122dp"
+                android:layout_height="16dp"
+                android:layout_below="@+id/tv_Realname_name"
+                android:layout_marginBottom="55dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="12dp"
+                android:text="36**************31"
+                android:textColor="@color/global_white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/img_Realname_confirm"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="36dp"
+                android:src="@mipmap/ic_real_pigeon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llt_personal_title"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:background="@color/global_background"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_Common_Problems_left"
+                android:layout_width="@dimen/wallet_title_width"
+                android:layout_height="@dimen/wallet_title_height"
+                android:layout_marginBottom="@dimen/wallet_title_marginBottom"
+                android:layout_marginLeft="@dimen/wallet_title_marginLeft"
+                android:layout_marginTop="@dimen/wallet_title_marginTop"
+                android:src="@mipmap/ic_home_return" />
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="146dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/Common_problems"
+                android:textColor="@color/global_white"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--全部常见问题内容栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/global_deep_background"
+        android:orientation="vertical">
+
+
+        <!--常见问题内容1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/common_problems"
+            android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llt_me_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_me_about"
+                            android:layout_width="201dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginTop="13dp"
+                            android:text="@string/Cash_back"
+                            android:textColor="@color/global_white"
+                            android:textSize="13dp" />
+
+                        <ImageView
+                            android:id="@+id/img_me_about_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+        <!--常见问题内容2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/common_problems"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llt_me_about2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_me_about2"
+                        android:layout_width="201dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/Cash_back"
+                        android:textColor="@color/global_white"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:id="@+id/img_me_about_right2"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@mipmap/ic_me_aorrwl" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--常见问题内容3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/common_problems"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llt_me_about3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_me_about3"
+                        android:layout_width="201dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/Cash_back"
+                        android:textColor="@color/global_white"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:id="@+id/img_me_about_right3"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@mipmap/ic_me_aorrwl" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--常见问题内容4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/common_problems"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llt_me_about4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_me_about4"
+                        android:layout_width="201dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/Cash_back"
+                        android:textColor="@color/global_white"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:id="@+id/img_me_about_right4"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@mipmap/ic_me_aorrwl" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

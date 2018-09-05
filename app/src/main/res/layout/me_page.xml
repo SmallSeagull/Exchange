@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/global_deep_background"
+    >
+
+    <include layout="@layout/me_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:background="@color/global_deep_background"
+        android:orientation="vertical">
+
+        <!--昵称栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/me_border"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_me_head"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="24px"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="23dp"
+                    android:src="@mipmap/ic_me_head" />
+
+                <TextView
+                    android:id="@+id/tv_me_name"
+                    android:layout_width="150dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_toRightOf="@+id/img_me_head"
+                    android:text="@string/me_page_name"
+                    android:textColor="@color/global_white"
+
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_me_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_me_name"
+                    android:layout_marginBottom="55dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@+id/img_me_head"
+                    android:text="xxxxx@xxx"
+                    android:textColor="@color/global_white"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/img_me_meassage"
+                    android:layout_width="24dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="36dp"
+                    android:src="@mipmap/ic_me_message" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--个人资料，账户安全，收款设置栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/me_border"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+
+                <!--个人资料栏-->
+                <LinearLayout
+                    android:id="@+id/llt_me_personal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/img_me_personal"
+                            android:layout_width="22dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="24px"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_me_peosal" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@+id/img_me_personal"
+                            android:text="@string/me_page__personal"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/img_me_personal_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <!--账户安全栏-->
+                <LinearLayout
+                    android:id="@+id/llt_me_account_safety"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/llt_me_personal"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/img_me_account"
+                            android:layout_width="22dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="24px"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_me_account" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@+id/img_me_account"
+                            android:text="@string/me_page_account"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/img_me_account_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <!--收款设置栏-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/llt_me_account_safety"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/img_me_collection"
+                            android:layout_width="22dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="24px"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_me_collection" />
+
+                        <TextView
+                            android:id="@+id/tv_me_collection"
+                            android:layout_width="150dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@+id/img_me_collection"
+                            android:text="@string/me_page_collection"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/img_me_collection_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--推荐返佣，常见问题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/me_border"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:id="@+id/llt_me_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/img_me_recommend"
+                            android:layout_width="22dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="24px"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_me_recom" />
+
+                        <TextView
+                            android:id="@+id/tv_me_recommend"
+                            android:layout_width="150dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@+id/img_me_recommend"
+                            android:text="@string/me_page_recommend"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/img_me_recommend_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <!--常见问题-->
+                <LinearLayout
+                    android:id="@+id/llt_me_common"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/llt_me_recommend"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/img_me_common"
+                            android:layout_width="22dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="24px"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_me_account" />
+
+                        <TextView
+                            android:id="@+id/tv_me_common"
+                            android:layout_width="150dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@+id/img_me_common"
+                            android:text="@string/me_page_common"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/img_me_common_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--关于栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/me_border"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:id="@+id/llt_me_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/img_me_about"
+                            android:layout_width="22dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="24px"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_me_about" />
+
+                        <TextView
+                            android:id="@+id/tv_me_about"
+                            android:layout_width="150dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@+id/img_me_about"
+                            android:text="@string/me_page_about"
+                            android:textColor="@color/global_white"
+
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/img_me_about_right"
+                            android:layout_width="6dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="19dp"
+                            android:src="@mipmap/ic_me_aorrwl" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

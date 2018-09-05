@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+            <!--通知栏样式-->
+    <dimen name="relative_height">60dp</dimen>
+    <dimen name="img_voice_marginLeft">8dp</dimen>
+    <dimen name="text_voice_width">300dp</dimen>
+    <dimen name="text_voice_height">12dp</dimen>
+    <dimen name="text_voice">12sp</dimen>
+    <dimen name="text_voice_marginLeft">36dp</dimen>
+
+    <!--FrameLayout底部布局的样式-->
+    <dimen name="framelayout_width">360dp</dimen>
+    <dimen name="framelayout_height">55dp</dimen>
+
+    <dimen name="layout_marginLeft">31dp</dimen>
+    <dimen name="layout_marginTop">9dp</dimen>
+    <dimen name="layout_marginBottom">6dp</dimen>
+
+    <dimen name="frame_img_width">19dp</dimen>
+    <dimen name="frame_img_height">19dp</dimen>
+    
+    <dimen name="frame_img_text_distance">3dp</dimen>
+    <!--底部图片的左边距和字体对齐-->
+    <dimen name="frame_img_marginLeft">3dp</dimen>
+
+
+    <dimen name="frame_text_width">25dp</dimen>
+    <dimen name="frame_text_height">18dp</dimen>
+    <dimen name="frame_text_size">12dp</dimen>
+
+    <!--交易顶部标题布局样式-->
+
+    <dimen name="trading_title_width">20dp</dimen>
+    <dimen name="trading_title_height">17dp</dimen>
+    <dimen name="trading_title_k_marginLeft">8dp</dimen>
+    <dimen name="trading_title_k_marginTop">30dp</dimen>
+    <dimen name="trading_title_k_marginBottom">14dp</dimen>
+
+    <!--钱包顶部标题布局样式-->
+
+    <dimen name="wallet_title_width">22dp</dimen>
+    <dimen name="wallet_title_height">22dp</dimen>
+    <dimen name="wallet_title_marginLeft">8dp</dimen>
+    <dimen name="wallet_title_marginTop">26dp</dimen>
+    <dimen name="wallet_title_marginBottom">14dp</dimen>
+    
+    <!--交易页面中间布局样式-->
+    
+    <dimen name="trading_center_btc_height">14dp</dimen>
+    <dimen name="trading_center_marginTop">15dp</dimen>
+
+
+
+</resources>

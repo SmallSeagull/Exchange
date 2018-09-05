@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="61dp"
+    android:orientation="horizontal"
+    android:background="@color/trading_backgrou"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_set_left"
+            android:layout_width="@dimen/wallet_title_width"
+            android:layout_height="@dimen/wallet_title_height"
+            android:layout_marginBottom="@dimen/wallet_title_marginBottom"
+            android:layout_marginLeft="@dimen/wallet_title_marginLeft"
+            android:layout_marginTop="@dimen/wallet_title_marginTop"
+            android:src="@mipmap/ic_home_return" />
+
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="164dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/me_set_title"
+            android:textColor="@color/trading_title_in"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
