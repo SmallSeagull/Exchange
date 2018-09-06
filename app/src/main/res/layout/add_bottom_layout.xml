@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="346dp"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/Pop_layout_bottom"
+    >
+
+    <!--底部弹出布局，添加支付宝，微信，银行卡-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/add_pay_border"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="179dp">
+
+            <TextView
+                android:id="@+id/add_title"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="146dp"
+                android:text="添加"
+                android:textSize="17dp" />
+
+            <!--支付宝栏-->
+            <LinearLayout
+                android:id="@+id/llt_add_Pay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/add_title"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/img_add_Pay"
+                        android:layout_width="22dp"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="24px"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_usdt_alipay" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/img_add_Pay"
+                        android:text="支付宝"
+                        android:textColor="@color/global_black"
+
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/img_add_Pay_right"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@mipmap/ic_me_aorrwl" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!--微信栏-->
+            <LinearLayout
+                android:id="@+id/llt_Add_WeChat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/llt_add_Pay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:baselineAligned="false">
+
+                    <ImageView
+                        android:id="@+id/img_WeChat"
+                        android:layout_width="22dp"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="24px"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_usdt_shln" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/img_WeChat"
+                        android:text="支付宝"
+                        android:textColor="@color/global_black"
+
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/img_WeChat_right"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@mipmap/ic_me_aorrwl" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!--银行卡栏-->
+            <LinearLayout
+                android:id="@+id/llt_Bank_Card"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/llt_Add_WeChat"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_Bank_Card"
+                        android:layout_width="22dp"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="24px"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/ic_usdt_yhk" />
+
+                    <TextView
+                        android:id="@+id/tv_me_collection"
+                        android:layout_width="150dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/img_Bank_Card"
+                        android:text="支付宝"
+                        android:textColor="@color/global_black"
+
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/img_Bank_Card_right"
+                        android:layout_width="6dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@mipmap/ic_me_aorrwl" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

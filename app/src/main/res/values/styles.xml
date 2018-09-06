@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    
+    <!--控制动画的进出效果-->
+    <style name="dialog_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/add_bottom_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/add_bottom_exit_anim</item>
+    </style>
+    
 </resources>

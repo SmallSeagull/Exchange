@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.renxinkeji.exchange.R;
 import com.renxinkeji.exchange.activity.me_activity.AboutMe;
 import com.renxinkeji.exchange.activity.me_activity.AccountSafety;
+import com.renxinkeji.exchange.activity.me_activity.CollectionWay;
 import com.renxinkeji.exchange.activity.me_activity.CommonProblems;
 import com.renxinkeji.exchange.activity.me_activity.PersonalData;
 import com.renxinkeji.exchange.activity.me_activity.RecommendRebate;
@@ -28,6 +29,7 @@ public class Fragment_my extends Fragment implements View.OnClickListener{
     private View lltPersonalData;
     private View lltCommon;
     private View lltAbout;
+    private View lltCollectionWay;
 
     @Nullable
     @Override
@@ -43,6 +45,7 @@ public class Fragment_my extends Fragment implements View.OnClickListener{
         imgmeSet = view.findViewById(R.id.img_me_set);  //获取设置按钮
         lltPersonalData = view.findViewById(R.id.llt_me_personal); //获取个人资料控件
         lltAccountSafety = view.findViewById(R.id.llt_me_account_safety); //获取账户安全控件
+        lltCollectionWay = view.findViewById(R.id.llt_Collection_Way); //获取收款设置控件
         lltMeRecommend = view.findViewById(R.id.llt_me_recommend); //获取推荐返佣控件
         lltCommon = view.findViewById(R.id.llt_me_common);         //获取常见问题控件
         lltAbout = view.findViewById(R.id.llt_me_about);           //关于我们控件
@@ -50,6 +53,7 @@ public class Fragment_my extends Fragment implements View.OnClickListener{
         imgmeSet.setOnClickListener(this);                      //设置按钮添加监听
         lltPersonalData.setOnClickListener(this);               //个人资料添加监听
         lltAccountSafety.setOnClickListener(this);              //账户安全添加监听
+        lltCollectionWay.setOnClickListener(this);              //收款设置添加监听
         lltMeRecommend.setOnClickListener(this);                //推荐返佣添加监听
         lltCommon.setOnClickListener(this);                     //常见问题添加监听
         lltAbout.setOnClickListener(this);                      //关于我们添加监听
@@ -72,6 +76,12 @@ public class Fragment_my extends Fragment implements View.OnClickListener{
             //账户安全控件
             case R.id.llt_me_account_safety:
                 intent = new Intent(getActivity(),AccountSafety.class);
+                startActivityForResult(intent,0x10);
+
+                break;
+            //收款设置控件
+            case R.id.llt_Collection_Way:
+                intent = new Intent(getActivity(), CollectionWay.class);
                 startActivityForResult(intent,0x10);
 
                 break;

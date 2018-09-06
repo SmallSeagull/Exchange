@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llt_Add_main"
+    >
 
+    <!--收款标题-->
     <LinearLayout
-        android:id="@+id/llt_wallet_title"
+        android:id="@+id/llt_Collection_way_title"
         android:layout_width="360dp"
         android:layout_height="61dp"
         android:background="@color/trading_backgrou"
@@ -15,7 +19,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/img_wallet_left"
+                android:id="@+id/img_Collection_way_left"
                 android:layout_width="@dimen/wallet_title_width"
                 android:layout_height="@dimen/wallet_title_height"
                 android:layout_marginBottom="@dimen/wallet_title_marginBottom"
@@ -25,38 +29,51 @@
 
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="67dp"
                 android:layout_height="25dp"
                 android:layout_marginBottom="13dp"
-                android:layout_marginLeft="164dp"
+                android:layout_marginLeft="147dp"
                 android:layout_marginTop="25dp"
-                android:text="@string/framelayout_wallet"
+                android:text="@string/Collection_way"
                 android:textColor="@color/trading_title_in"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
 
             <ImageView
-                android:id="@+id/img_wallet_eyes"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
+                android:id="@+id/img_Collection_way_plus"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="320dp"
-                android:layout_marginTop="30dp"
-                android:src="@mipmap/ic_wallet_open" />
+                android:layout_marginTop="26dp"
+                android:src="@mipmap/ic_me_collection_plus" />
         </RelativeLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/llt_wallet_content"
+    <!--收款方式主页内容-->
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/llt_wallet_title"
         android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="钱包主页内容" />
-    </LinearLayout>
+            android:layout_height="match_parent">
 
-</RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="345dp"
+                android:layout_height="88dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这是收款方式内容" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

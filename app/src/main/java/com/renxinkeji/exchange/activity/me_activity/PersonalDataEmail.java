@@ -8,30 +8,32 @@ import android.view.View;
 import com.renxinkeji.exchange.R;
 import com.renxinkeji.exchange.activity.BaseActivity;
 
-public class AddAlipay extends BaseActivity implements View.OnClickListener {
+public class PersonalDataEmail extends BaseActivity implements View.OnClickListener {
 
-    private View imgAddalipayLeft;
-    private Intent intent;
+    private View imgEmailLeft;
+    private Intent intentPersonal;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_alipay);
-        initViewData();
+        setContentView(R.layout.personal_email);
+
+        initEmailData();
     }
 
-    private void initViewData() {
-        imgAddalipayLeft = findViewById(R.id.img_add_alipay_left);
+    private void initEmailData() {
+        imgEmailLeft = findViewById(R.id.img_Email_left);
 
-        imgAddalipayLeft.setOnClickListener(this);
+        imgEmailLeft.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.img_add_alipay_left:
-                intent = getIntent();
-                setResult(0x12,intent);
+            case R.id.img_Email_left:
+                //返回个人资料界面
+                intentPersonal = getIntent();
+                setResult(0x13,intentPersonal);
                 finish();
                 break;
         }

@@ -3,8 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/global_deep_background"
     >
 
+    <!--邮箱界面标题-->
     <LinearLayout
         android:id="@+id/llt_Email_title"
         android:layout_width="360dp"
@@ -42,6 +44,78 @@
     </LinearLayout>
 
     <!--邮箱中间界面布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!--tab栏-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_Email_confirm"
+                android:layout_width="96dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:text="邮箱确认"
+                android:gravity="center"
+                android:textColor="@color/global_white"
+                />
+            <TextView
+                android:id="@+id/tv_Email_change"
+                android:layout_width="96dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="修改邮箱"
+                android:gravity="center"
+                android:textColor="@color/global_white"
+                />
+            <TextView
+                android:id="@+id/tv_Email_change_success"
+                android:layout_width="96dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="修改成功"
+                android:gravity="center"
+                android:textColor="@color/global_white"
+                />
+            
+        </LinearLayout>
+
+        <!--滑动条-->
+        <View
+            android:id="@+id/view_cursor"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/global_white"
+            />
+
+        <!--ViewPage布局-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPage_Email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+
+        
+    </LinearLayout>
+
+
+
+
+
+
 
 
 </LinearLayout>

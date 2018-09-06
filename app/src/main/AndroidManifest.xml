@@ -43,6 +43,15 @@
         <!--添加支付宝活动-->
         <activity android:name=".activity.me_activity.AddAlipay"></activity>
 
+        <!--添加银行卡-->
+        <activity android:name=".activity.me_activity.AddBankCard"></activity>
+
+        <!--收款方式活动-->
+        <activity android:name=".activity.me_activity.CollectionWay"></activity>
+
+        <!--邮箱界面活动-->
+        <activity android:name=".activity.me_activity.PersonalDataEmail"></activity>
+
     </application>
 
 </manifest>

@@ -8,32 +8,35 @@ import android.view.View;
 import com.renxinkeji.exchange.R;
 import com.renxinkeji.exchange.activity.BaseActivity;
 
-public class AddAlipay extends BaseActivity implements View.OnClickListener {
+public class AddBankCard extends BaseActivity implements View.OnClickListener {
 
-    private View imgAddalipayLeft;
+    private View imgBankCardLeft;
     private Intent intent;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_alipay);
-        initViewData();
+        setContentView(R.layout.add_bank_card);
+        initBankCardData();
     }
 
-    private void initViewData() {
-        imgAddalipayLeft = findViewById(R.id.img_add_alipay_left);
+    private void initBankCardData() {
+        imgBankCardLeft = findViewById(R.id.img_add_Bank_card_left);
 
-        imgAddalipayLeft.setOnClickListener(this);
+        imgBankCardLeft.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.img_add_alipay_left:
+            case R.id.img_add_Bank_card_left:
                 intent = getIntent();
                 setResult(0x12,intent);
                 finish();
                 break;
         }
+
     }
+
+
 }

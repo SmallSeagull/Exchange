@@ -70,6 +70,8 @@
     <string name="add_alipay_title">添加支付宝</string>
     <!--添加银行卡-->
     <string name="add_bank_crad">添加银行卡</string>
+    <!--收款方式页面-->
+    <string name="Collection_way">收款方式</string>
 
 
 

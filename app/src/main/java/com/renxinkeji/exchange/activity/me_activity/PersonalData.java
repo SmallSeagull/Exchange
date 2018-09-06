@@ -18,7 +18,7 @@ import com.renxinkeji.exchange.activity.BaseActivity;
 public class PersonalData extends BaseActivity implements View.OnClickListener {
 
     private View imgPersonalLeft;
-    private Intent intent;
+    private Intent intentme;
     private View lltName;
     private View lltUserId;
     private View lltEmail;
@@ -33,6 +33,8 @@ public class PersonalData extends BaseActivity implements View.OnClickListener {
     private AlertDialog myAlertDialog;
     private View btn_Positive;
     private View btn_Negative;
+    private Intent intent1;
+    private Intent intentEmail;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,26 +47,27 @@ public class PersonalData extends BaseActivity implements View.OnClickListener {
         imgPersonalLeft = findViewById(R.id.img_personal_left);//获取返回按钮控件
         lltName = findViewById(R.id.llt_personal_name);//获取昵称控件
         lltUserId = findViewById(R.id.llt_personal_UserId);//获取用户ID
-        lltEmail = findViewById(R.id.llt_personal_Email);
-        lltPhone = findViewById(R.id.llt_personal_Phone);
+        lltEmail = findViewById(R.id.llt_personal_Email);   //获取邮箱
+        lltPhone = findViewById(R.id.llt_personal_Phone);   //获取手机
 
-        imgPersonalLeft.setOnClickListener(this);
-        lltName.setOnClickListener(this);
-        lltUserId.setOnClickListener(this);
-        lltEmail.setOnClickListener(this);
-        lltPhone.setOnClickListener(this);
+        imgPersonalLeft.setOnClickListener(this);           //返回控件添加监听
+        lltName.setOnClickListener(this);                   //昵称控件添加监听
+        lltUserId.setOnClickListener(this);                 //用户ID控件添加监听
+        lltEmail.setOnClickListener(this);                  //邮箱控件添加监听
+        lltPhone.setOnClickListener(this);                  //手机控件添加监听
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.img_personal_left:
-                intent = getIntent();
-                setResult(0x10,intent);
+                //返回个人资料界面
+                intentme = getIntent();
+                setResult(0x10,intentme);
                 finish();
                 break;
             case R.id.llt_personal_name:
-
+                //弹出修改昵称弹窗
                 initAlertDialog();
 
                 break;
@@ -72,7 +75,9 @@ public class PersonalData extends BaseActivity implements View.OnClickListener {
 
                 break;
             case R.id.llt_personal_Email:
-
+                //跳转到邮箱活动
+                intentEmail = new Intent(getApplicationContext(),PersonalDataEmail.class);
+                startActivityForResult(intentEmail,0x13);
                 break;
             case R.id.llt_personal_Phone:
 
