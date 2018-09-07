@@ -7,17 +7,16 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <!--交易页面标题-->
-        <com.renxinkeji.exchange.activity.trading_activity.TradingTitle
-            android:id="@+id/trading_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <!--交易页面标题栏-->
+        <include layout="@layout/trading_title"
+            android:id="@+id/llt_trading_title"
+            />
 
         <LinearLayout
             android:id="@+id/llt_trading_center_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/trading_title"
+            android:layout_below="@+id/llt_trading_title"
             android:background="#151935"
             android:orientation="vertical">
 

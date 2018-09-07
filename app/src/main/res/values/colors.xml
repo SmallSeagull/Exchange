@@ -45,6 +45,9 @@
     <color name="trading_title_border">#ffffffff</color>
     <color name="trading_white">#ffffffff</color>
 
+    <!--按钮点击背景颜色-->
+    <drawable name="btn_background_color">#ff32395e</drawable>
+    <drawable name="btn_text_color">#ffffffff</drawable>
 
 </resources>
 

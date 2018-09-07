@@ -52,6 +52,8 @@
         <!--邮箱界面活动-->
         <activity android:name=".activity.me_activity.PersonalDataEmail"></activity>
 
+        <!--交易界面买入活动界面-->
+
     </application>
 
 </manifest>

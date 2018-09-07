@@ -126,9 +126,9 @@ public class PersonalData extends BaseActivity implements View.OnClickListener {
             }
         });
 
-
-
     }
+
+
 
 
 }

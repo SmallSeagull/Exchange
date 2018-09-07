@@ -45,8 +45,15 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
         <!--姓名栏-->
         <LinearLayout
+            android:id="@+id/llt_Bank_Card_name"
             android:layout_width="345dp"
             android:layout_height="48dp"
             android:layout_marginLeft="8dp"
@@ -68,10 +75,12 @@
 
         <!--银行账号栏-->
         <LinearLayout
+            android:id="@+id/llt_Bank_Card_account"
             android:layout_width="345dp"
             android:layout_height="48dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="9dp"
+            android:layout_below="@+id/llt_Bank_Card_name"
             android:background="@drawable/me_border"
             android:orientation="horizontal">
 
@@ -91,10 +100,12 @@
 
         <!--开户银行栏-->
         <LinearLayout
+            android:id="@+id/llt_Open_account_Bank_Card_"
             android:layout_width="345dp"
             android:layout_height="48dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="9dp"
+            android:layout_below="@+id/llt_Bank_Card_account"
             android:background="@drawable/me_border"
             android:orientation="horizontal">
 
@@ -114,10 +125,12 @@
 
         <!--开户地址栏-->
         <LinearLayout
+            android:id="@+id/llt_Open_account_Address"
             android:layout_width="345dp"
             android:layout_height="48dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="9dp"
+            android:layout_below="@+id/llt_Open_account_Bank_Card_"
             android:background="@drawable/me_border"
             android:orientation="horizontal">
 
@@ -158,12 +171,16 @@
             android:id="@+id/btn_add_Bank_card_save"
             android:layout_width="345dp"
             android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="13dp"
+            android:layout_alignParentBottom="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="585dp"
             android:background="@drawable/me_border"
             android:text="保存"
             android:textColor="@color/global_blue" />
 
+        </RelativeLayout>
 
     </LinearLayout>
 

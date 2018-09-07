@@ -5,6 +5,11 @@
     android:background="@color/global_deep_background"
     android:orientation="vertical">
 
+
+
+
+
+    <!--添加支付宝的标题栏-->
     <LinearLayout
         android:id="@+id/llt_add_alipay_title"
         android:layout_width="360dp"
@@ -45,8 +50,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
         <!--姓名栏-->
         <LinearLayout
+            android:id="@+id/llt_add_Alipay_name"
             android:layout_width="345dp"
             android:layout_height="48dp"
             android:layout_marginLeft="8dp"
@@ -68,10 +78,12 @@
 
         <!--账号栏-->
         <LinearLayout
+            android:id="@+id/llt_add_account"
             android:layout_width="345dp"
             android:layout_height="48dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="9dp"
+            android:layout_below="@+id/llt_add_Alipay_name"
             android:background="@drawable/me_border"
             android:orientation="horizontal">
 
@@ -91,10 +103,12 @@
 
         <!--添加收款二维码 -->
         <LinearLayout
+            android:id="@+id/llt_add_Receipt_code"
             android:layout_width="345dp"
             android:layout_height="134dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="9dp"
+            android:layout_below="@+id/llt_add_account"
             android:background="@drawable/me_border"
             android:orientation="vertical">
 
@@ -124,18 +138,23 @@
         
         <Button
             android:id="@+id/btn_add_alipay_save"
-            android:layout_width="345dp"
+            android:layout_width="match_parent"
             android:layout_height="42dp"
-            android:layout_marginTop="265dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="13dp"
             android:text="保存"
             android:textColor="@color/global_blue"
             android:background="@drawable/me_border"
             android:layout_gravity="center_horizontal"
             />
-        
 
+
+    </RelativeLayout>
 
     </LinearLayout>
+
 
 
 </LinearLayout>
