@@ -20,6 +20,23 @@ android {
     }
 
 
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                    'src/main/res/layout/home_layout',
+                    'src/main/res/layout/trading_layout',
+                    'src/main/res/layout/bouns_layout',
+                    'src/main/res/layout/wallet_layout',
+                    'src/main/res/layout/me_layout',
+                    'src/main/res/layout',
+                    'src/main/res'
+                     ]
+        }
+    }
+
+
+
 }
 
 dependencies {

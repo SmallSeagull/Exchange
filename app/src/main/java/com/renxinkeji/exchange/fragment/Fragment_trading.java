@@ -48,11 +48,16 @@ public class Fragment_trading extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch ((v.getId())){
             case R.id.trading_view_in:
+                trading_buy_in.setEnabled(false);
+                trading_buy_in.setPressed(false);
+                trading_sell_out.setEnabled(true);  //未点击的颜色
                 //弹出交易密码弹框
                 initAlertDialog();
                 ToastUtils.show(getContext(),"您点击了买入");
                 break;
             case R.id.trading_view_out:
+                trading_buy_in.setEnabled(true);
+                trading_sell_out.setEnabled(false); //点击了的颜色
                 ToastUtils.show(getContext(),"您点击了卖出");
                 break;
         }
