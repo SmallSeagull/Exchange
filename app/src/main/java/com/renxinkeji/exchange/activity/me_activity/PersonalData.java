@@ -93,6 +93,8 @@ public class PersonalData extends BaseActivity implements View.OnClickListener {
 
     }
 
+
+
     private void initAlertDialog() {
         inflater = (LayoutInflater) this.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = inflater.inflate(R.layout.personal_alertdialog, null);
@@ -113,8 +115,14 @@ public class PersonalData extends BaseActivity implements View.OnClickListener {
             @Override
             public void onClick(View v) {
                 etNickname = etChangeNickname.getContext().toString().trim();
-
+                btn_Positive.setEnabled(false);
+                Setselected();
+                btn_Positive.setSelected(true);
                 Toast.makeText(getApplicationContext(),"修改成功",Toast.LENGTH_SHORT).show();
+            }
+            /**/
+            private void Setselected() {
+                btn_Positive.setSelected(false);
             }
         });
         //取消

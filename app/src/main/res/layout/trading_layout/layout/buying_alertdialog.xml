@@ -3,21 +3,24 @@
     android:layout_width="288dp"
     android:layout_height="192dp"
     android:orientation="vertical"
+    android:id="@+id/llt_buying_alert"
     >
     
     <TextView
-        android:layout_width="106dp"
+        android:layout_width="match_parent"
         android:layout_height="18dp"
-        android:layout_marginLeft="114dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginRight="91dp"
         android:layout_marginTop="31dp"
         android:text="请输入交易密码"
         android:textSize="15dp"
         />
 
     <LinearLayout
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
         android:layout_height="38dp"
         android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
         android:layout_marginTop="31dp"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
@@ -40,22 +43,25 @@
     <!--取消和确认按钮-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="41dp"
         android:orientation="horizontal"
         android:layout_marginTop="36dp"
         >
         
         <Button
             android:id="@+id/btn_Negative"
-            android:layout_width="144dp"
+            android:layout_width="154dp"
             android:layout_height="41dp"
             android:text="取消"
+            android:background="@color/global_gray"
             />
         <Button
             android:id="@+id/btn_Positive"
-            android:layout_width="144dp"
+            android:layout_width="154dp"
             android:layout_height="41dp"
             android:text="确认"
+            android:textColor="@drawable/personal_nickname_btn_textcolor"
+            android:background="@drawable/personal_alertdialog_confirm_btn"
             />
         
     </LinearLayout>

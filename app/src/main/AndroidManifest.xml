@@ -52,8 +52,11 @@
         <!--邮箱界面活动-->
         <activity android:name=".activity.me_activity.PersonalDataEmail"></activity>
 
-        <!--交易界面买入活动界面-->
+        <!--忘记登录密码活动-->
+        <activity android:name=".activity.me_activity.ForgetLoginPassword"></activity>
 
+        <!--重置登录密码活动-->
+        <activity android:name=".activity.me_activity.ResetLoginPassword"></activity>
     </application>
 
 </manifest>

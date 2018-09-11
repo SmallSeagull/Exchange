@@ -4,7 +4,7 @@
     <!--首页数据显示-->
     <string name="voice_text">交易所正式开启,啦啦啦啦啦啦啦啦</string>
     <string name="framelayout_home">首页</string>
-    <string name="framelayout_deal">交易</string>
+    <string name="framelayout_deal">法币交易</string>
     <string name="framelayout_bonus">分红</string>
     <string name="framelayout_wallet">钱包</string>
     <string name="framelayout_me">我的</string>

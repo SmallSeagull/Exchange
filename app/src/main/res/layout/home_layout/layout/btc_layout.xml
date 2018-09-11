@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/global_deep_background"
+    >
+
+    <!--昵称栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/me_border"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_me_head"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:src="@mipmap/ic_home_rmz" />
+
+            <TextView
+                android:id="@+id/tv_me_name"
+                android:layout_width="150dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="26dp"
+                android:layout_toRightOf="@+id/img_me_head"
+                android:text="RMZ/CNY"
+                android:textColor="@color/global_white"
+
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_me_email"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv_me_name"
+                android:layout_marginBottom="55dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/img_me_head"
+                android:text="24h量1000"
+                android:textColor="@color/global_white"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/img_me_meassage"
+                android:layout_width="88dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="36dp"
+                android:text="对冲交易"
+                android:gravity="center"
+                android:background="@drawable/home_viewpage_border"
+                android:textColor="@color/global_white"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

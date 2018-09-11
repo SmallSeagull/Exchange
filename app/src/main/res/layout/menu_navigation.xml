@@ -11,13 +11,20 @@
         android:layout_alignParentEnd="true"
         android:background="@color/home_backgrou">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+
+
         <!--首页-->
         <LinearLayout
             android:id="@+id/llt_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:layout_marginLeft="31dp"
+            android:layout_marginLeft="36dp"
+            android:gravity="center"
             android:layout_marginTop="@dimen/layout_marginTop"
             android:orientation="vertical">
 
@@ -30,7 +37,7 @@
                     android:layout_width="@dimen/frame_img_width"
                     android:layout_height="@dimen/frame_img_height"
                     android:layout_marginBottom="@dimen/frame_img_text_distance"
-                    android:layout_marginLeft="@dimen/frame_img_marginLeft"
+                    android:layout_marginLeft="2dp"
                     android:background="@drawable/fragment_home_page" />
 
                 <TextView
@@ -48,10 +55,11 @@
         <!--交易-->
         <LinearLayout
             android:id="@+id/llt_trading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="44dp"
             android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:layout_marginLeft="101dp"
+            android:layout_marginLeft="125dp"
+            android:gravity="center"
             android:layout_marginTop="@dimen/layout_marginTop"
             android:orientation="vertical">
 
@@ -64,12 +72,12 @@
                     android:layout_width="@dimen/frame_img_width"
                     android:layout_height="@dimen/frame_img_height"
                     android:layout_marginBottom="@dimen/frame_img_text_distance"
-                    android:layout_marginLeft="@dimen/frame_img_marginLeft"
+                    android:layout_marginLeft="15dp"
                     android:background="@drawable/fragment_trading_page" />
 
                 <TextView
                     android:id="@+id/tv_trading"
-                    android:layout_width="@dimen/frame_text_width"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/frame_text_height"
                     android:layout_below="@+id/img_trading"
                     android:text="@string/framelayout_deal"
@@ -79,47 +87,48 @@
 
         </LinearLayout>
 
-        <!--分红-->
-        <LinearLayout
-            android:id="@+id/llt_bonus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:layout_marginLeft="170dp"
-            android:layout_marginTop="@dimen/layout_marginTop"
-            android:orientation="vertical">
+        <!--&lt;!&ndash;分红&ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llt_bonus"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/layout_marginBottom"-->
+            <!--android:layout_marginLeft="170dp"-->
+            <!--android:layout_marginTop="@dimen/layout_marginTop"-->
+            <!--android:orientation="vertical">-->
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
 
-                <ImageView
-                    android:id="@+id/img_bonus"
-                    android:layout_width="@dimen/frame_img_width"
-                    android:layout_height="@dimen/frame_img_height"
-                    android:layout_marginBottom="@dimen/frame_img_text_distance"
-                    android:layout_marginLeft="@dimen/frame_img_marginLeft"
-                    android:background="@drawable/fragment_shareout_bonus" />
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_bonus"-->
+                    <!--android:layout_width="@dimen/frame_img_width"-->
+                    <!--android:layout_height="@dimen/frame_img_height"-->
+                    <!--android:layout_marginBottom="@dimen/frame_img_text_distance"-->
+                    <!--android:layout_marginLeft="@dimen/frame_img_marginLeft"-->
+                    <!--android:background="@drawable/fragment_shareout_bonus" />-->
 
-                <TextView
-                    android:id="@+id/tv_bonus"
-                    android:layout_width="@dimen/frame_text_width"
-                    android:layout_height="@dimen/frame_text_height"
-                    android:layout_below="@+id/img_bonus"
-                    android:text="@string/framelayout_bonus"
-                    android:textColor="@drawable/navigation_text_color"
-                    android:textSize="@dimen/frame_text_size" />
-            </RelativeLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_bonus"-->
+                    <!--android:layout_width="@dimen/frame_text_width"-->
+                    <!--android:layout_height="@dimen/frame_text_height"-->
+                    <!--android:layout_below="@+id/img_bonus"-->
+                    <!--android:text="@string/framelayout_bonus"-->
+                    <!--android:textColor="@drawable/navigation_text_color"-->
+                    <!--android:textSize="@dimen/frame_text_size" />-->
+            <!--</RelativeLayout>-->
 
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
         <!--钱包-->
         <LinearLayout
             android:id="@+id/llt_wallet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:layout_marginLeft="240dp"
+            android:layout_marginLeft="216dp"
+            android:gravity="center"
             android:layout_marginTop="@dimen/layout_marginTop"
             android:orientation="vertical">
 
@@ -131,7 +140,7 @@
                     android:id="@+id/img_wallet"
                     android:layout_width="@dimen/frame_img_width"
                     android:layout_height="@dimen/frame_img_height"
-                    android:layout_marginLeft="@dimen/frame_img_marginLeft"
+                    android:layout_marginLeft="2dp"
                     android:layout_marginBottom="@dimen/frame_img_text_distance"
                     android:background="@drawable/fragment_thewallet" />
 
@@ -150,11 +159,12 @@
         <!--我的-->
         <LinearLayout
             android:id="@+id/llt_me"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:layout_marginLeft="307dp"
+            android:layout_marginLeft="299dp"
             android:layout_marginTop="@dimen/layout_marginTop"
+            android:gravity="center"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -166,7 +176,7 @@
                     android:layout_width="@dimen/frame_img_width"
                     android:layout_height="@dimen/frame_img_height"
                     android:layout_marginBottom="@dimen/frame_img_text_distance"
-                    android:layout_marginLeft="@dimen/frame_img_marginLeft"
+                    android:layout_marginLeft="2dp"
                     android:background="@drawable/fragment_my" />
 
                 <TextView
@@ -181,6 +191,7 @@
 
         </LinearLayout>
 
+        </RelativeLayout>
 
     </FrameLayout>
 

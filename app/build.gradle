@@ -29,6 +29,7 @@ android {
                     'src/main/res/layout/bouns_layout',
                     'src/main/res/layout/wallet_layout',
                     'src/main/res/layout/me_layout',
+                    'src/main/res/layout/other_page_layout',
                     'src/main/res/layout',
                     'src/main/res'
                      ]

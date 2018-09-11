@@ -39,11 +39,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
 
     private FragmentTransaction beginTransaction;
 
-    private View llthome;
-    private View llttrading;
-    private View lltbonus;
-    private View lltwallet;
-    private View lltme;
+    private View llthome;       //初始化首页
+    private View llttrading;    //初始化交易页面
+//    private View lltbonus;    //初始化分红页面
+    private View lltwallet;     //初始化钱包页面
+    private View lltme;         //初始话我的页面
 
 
     @Override
@@ -71,15 +71,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
 
 
     private void initData() {
-        llthome = findViewById(R.id.llt_home);
-        llttrading = findViewById(R.id.llt_trading);
-        lltbonus = findViewById(R.id.llt_bonus);
-        lltwallet = findViewById(R.id.llt_wallet);
-        lltme = findViewById(R.id.llt_me);
+        llthome = findViewById(R.id.llt_home);              //首页页面
+        llttrading = findViewById(R.id.llt_trading);        //交易页面
+//        lltbonus = findViewById(R.id.llt_bonus);            //分红页面
+        lltwallet = findViewById(R.id.llt_wallet);          //钱包页面
+        lltme = findViewById(R.id.llt_me);                  //我的页面
 
         llthome.setOnClickListener(this);
         llttrading.setOnClickListener(this);
-        lltbonus.setOnClickListener(this);
+//        lltbonus.setOnClickListener(this);            //分红页面暂时不加
         lltwallet.setOnClickListener(this);
         lltme.setOnClickListener(this);
     }
@@ -90,7 +90,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         llthome.setSelected(false);
 
         llttrading.setSelected(false);
-        lltbonus.setSelected(false);
+//        lltbonus.setSelected(false);
         lltwallet.setSelected(false);
         lltme.setSelected(false);
     }
@@ -101,7 +101,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     private void hideAllFragment(FragmentTransaction fragmentTransaction){
         if(Frag_home_page != null)fragmentTransaction.hide(Frag_home_page);
         if(Frag_trading_page != null)fragmentTransaction.hide(Frag_trading_page);
-        if(Frag_bonus_page != null)fragmentTransaction.hide(Frag_bonus_page);
+//        if(Frag_bonus_page != null)fragmentTransaction.hide(Frag_bonus_page);
         if(Frag_wallet_page != null)fragmentTransaction.hide(Frag_wallet_page);
         if(Frag_my_page != null)fragmentTransaction.hide(Frag_my_page);
     }
@@ -134,16 +134,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 }
 
                 break;
-            case R.id.llt_bonus:
-                setSelected();
-                lltbonus.setSelected(true);
-                if(Frag_bonus_page==null){
-                    Frag_bonus_page = new Fragment_bonus();
-                    beginTransaction.add(R.id.fragment_page,Frag_bonus_page);
-                }else {
-                    beginTransaction.show(Frag_bonus_page);
-                }
-                break;
+//            case R.id.llt_bonus:
+//                setSelected();
+//                lltbonus.setSelected(true);
+//                if(Frag_bonus_page==null){
+//                    Frag_bonus_page = new Fragment_bonus();
+//                    beginTransaction.add(R.id.fragment_page,Frag_bonus_page);
+//                }else {
+//                    beginTransaction.show(Frag_bonus_page);
+//                }
+//                break;
             case R.id.llt_wallet:
                 setSelected();
                 lltwallet.setSelected(true);

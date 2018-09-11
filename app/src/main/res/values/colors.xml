@@ -15,11 +15,15 @@
     <color name="global_shallow_gray">#ff6e7797</color>
     <!--全局矩形框背景色-->
     <color name="global_slate_blue">#ff32395e</color>
+    <!--全局粉红色-->
+    <color name="global_pink">#ffff6464</color>
     <color name="global_background">#ff1C2340</color>
     <!--全局背景淡灰色-->
     <color name="global_light_gray">#ffececec</color>
     <!--全局淡黑色-->
     <color name="global_black">#ff666666</color>
+    <!--全局黑色-->
+    <color name="global_black_hei">#000000</color>
 
     <!--推荐二维码背景灰色-->
     <color name="global_gray">#ffdcdcdc</color>

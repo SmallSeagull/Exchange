@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_deep_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="132dp"
+        android:layout_marginRight="132dp"
+        android:layout_marginTop="65dp"
+        android:src="@mipmap/future_logo_login" />
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="387dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/other_page_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="317dp"
+            android:layout_height="387dp">
+
+            <!--注册输入手机栏-->
+            <ImageView
+                android:id="@+id/img_register_phone"
+                android:layout_width="15dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="34dp"
+                android:src="@mipmap/ic_account" />
+
+            <View
+                android:id="@+id/view_register_phone"
+                android:layout_width="278dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/img_register_phone"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/global_shallow_gray" />
+
+            <TextView
+                android:id="@+id/tv_phone_right"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="9dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="34dp"
+                android:text="+86"
+                android:textColor="@color/global_shallow_gray"
+                android:textSize="14dp" />
+
+            <!--注册输入验证码栏-->
+            <ImageView
+                android:id="@+id/img_register_auth_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_register_phone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="44dp"
+                android:src="@mipmap/ic_code" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="18dp"
+                android:layout_alignBottom="@+id/img_register_auth_code"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="47dp"
+                android:hint="请输入验证码"
+                android:textColorHint="@color/global_shallow_gray"
+                android:textSize="12dp" />
+
+            <View
+                android:id="@+id/view_register_auth_code"
+                android:layout_width="278dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/img_register_auth_code"
+                android:layout_marginLeft="19dp"
+                android:background="@color/global_shallow_gray" />
+
+            <TextView
+                android:id="@+id/tv_phone_auth_code"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_register_phone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="44dp"
+                android:text="获取验证码"
+                android:textColor="@color/global_blue"
+                android:textSize="12dp" />
+
+            <!--注册输入密码栏-->
+            <ImageView
+                android:id="@+id/img_register_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_register_auth_code"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="44dp"
+                android:src="@mipmap/ic_password_reset" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_alignBottom="@+id/img_register_password"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="48dp"
+                android:hint="请输入密码"
+                android:textColorHint="@color/global_shallow_gray"
+                android:textSize="12dp" />
+
+            <View
+                android:id="@+id/view_register_password"
+                android:layout_width="278dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/img_register_password"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/global_shallow_gray" />
+
+            <!--确认密码栏-->
+            <ImageView
+                android:id="@+id/img_confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_register_password"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="44dp"
+                android:src="@mipmap/ic_password_reset" />
+
+            <TextView
+                android:id="@+id/tv_confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_alignBottom="@+id/img_confirm_password"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="48dp"
+                android:hint="请确认验证码"
+                android:textColorHint="@color/global_shallow_gray"
+                android:textSize="12dp" />
+
+            <View
+                android:id="@+id/view_confirm_password"
+                android:layout_width="278dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/img_confirm_password"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/global_shallow_gray" />
+
+            <!--用户阅读协议栏-->
+
+            <ImageView
+                android:id="@+id/img_User_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="11dp"
+                android:layout_below="@+id/view_confirm_password"
+                android:src="@mipmap/normal" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="14dp"
+                android:layout_alignBottom="@+id/img_User_agreement"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="11dp"
+                android:text="已阅《读用户协议》"
+                android:textColor="@color/global_shallow_gray"
+                android:textSize="10dp" />
+
+            <!--注册按钮-->
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="267dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginRight="25dp"
+                android:layout_below="@+id/view_confirm_password"
+                android:background="@drawable/other_page_btn_border"
+                android:text="注册"
+                android:textSize="16dp"
+                />
+
+            <!--已有账号，和登录-->
+            <TextView
+                android:id="@+id/tv_register_have_account"
+                android:layout_width="54dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/btn_register"
+                android:text="已有账号"
+                android:textSize="12dp"
+                />
+            
+            <TextView
+                android:id="@+id/tv_register_login"
+                android:layout_width="32dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btn_register"
+                android:text="登录"
+                android:textSize="12dp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

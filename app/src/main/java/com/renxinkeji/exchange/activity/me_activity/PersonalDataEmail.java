@@ -130,9 +130,9 @@ public class PersonalDataEmail extends BaseActivity implements View.OnClickListe
 
         offset = (s_width / viewList.size() - cursor_Width) / 2;     //计算偏移量(保证滑动条在tab下正中间)
 
-        transformation = new Transformation();
+        transformation = new Transformation();     //初始化移动动画的对象
 
-        matrix = transformation.getMatrix();
+        matrix = transformation.getMatrix();       //获取滑条移动的方法
         matrix.postTranslate(offset,0);
         viewCursor.setTag(matrix);
 
@@ -144,7 +144,7 @@ public class PersonalDataEmail extends BaseActivity implements View.OnClickListe
 
         int one = offset * 2 +cursor_Width;     //页卡1到页卡2偏移量
         int two = one * 2;                      //页卡1到页卡3的量
-        int three =one+one;
+
 
 
 
@@ -227,7 +227,6 @@ public class PersonalDataEmail extends BaseActivity implements View.OnClickListe
         public NewPagerAdapter(ArrayList<View> viewList) {
             this.viewList = viewList;
         }
-
 
         @Override
         public boolean isViewFromObject(@NonNull View arg0, @NonNull Object arg1) {
